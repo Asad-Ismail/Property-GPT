@@ -8,6 +8,7 @@ from langchain.callbacks.base import BaseCallbackManager
 from langchain.chains.llm import LLMChain
 from langchain.llms.base import BaseLLM
 from langchain.tools.python.tool import PythonAstREPLTool
+#from langchain.utilities import GoogleSearchAPIWrapper
 
 
 def create_pandas_dataframe_agent(
@@ -29,7 +30,28 @@ def create_pandas_dataframe_agent(
     if not isinstance(df, pd.DataFrame):
         raise ValueError(f"Expected pandas object, got {type(df)}")
     if input_variables is None:
-        input_variables = ["df", "input", "agent_scratchpad"]
+        input_variables = ["df", "input",  "agent_scratchpad"]
+
+    '''
+
+    input_variables = ["df", "input", "chat_history", "agent_scratchpad"]
+
+    search = GoogleSearchAPIWrapper()
+    
+    tools = [
+        Tool(
+            name = "Search",
+            func=search.run,
+            description="useful for when you need to answer questions about current events"
+        )
+    ]
+
+    memory = ConversationBufferMemory(memory_key="chat_history")
+
+    agent_chain = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True, memory=memory)
+
+    '''
+
     tools = [PythonAstREPLTool(locals={"df": df})]
     prompt = ZeroShotAgent.create_prompt(
         tools, prefix=prefix, suffix=suffix, input_variables=input_variables

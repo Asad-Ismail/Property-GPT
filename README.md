@@ -14,10 +14,10 @@ Looking for a new property/real estate 🏠 to buy can be a daunting task, espec
 
 
 <div align="center">
-<img src="vis_imgs/buyingNetherlands.png" width=200px>
+<img src="vis_imgs/buyingNetherlands.png" width=70%>
 <h6 align="center">Buying in Netherlands in 2023?</h6>
 
 
 <div align="center">
-<img src="vis_imgs/specific_cities_netherlands.png" width=200px>
+<img src="vis_imgs/specific_cities_netherlands.png" width=70%>
 <h6 align="center">Where To Buy?</h6>

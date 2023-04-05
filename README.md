@@ -1,5 +1,6 @@
-# Property-GPT
+# Property/RealState-GPT
 
+A Free opensource implmentation of your personal property/realstate agent powered by GPT3/GPT4
 
 ## Introduction
 Looking for a new property to buy can be a daunting task, especially when there are so many options available. With the help of GPT-3/4, this project aims to simplify the process of finding the best property to buy.

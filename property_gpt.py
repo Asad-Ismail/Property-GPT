@@ -15,4 +15,7 @@ llm=OpenAI(temperature=0,max_tokens=1000,model_name="text-davinci-003")
 from propertyagent.base import create_property_agent as create_property_agnet
 agent = create_property_agnet(llm, df, verbose=True)
 #agent.run("Is 2023 a good time to buy a house in netherland?")
-agent.run("Which cities are good to buy house in Netherlands in 2023 if I have a budget of 400,000 euros?")
+query="Is 2023 a good time to buy a house in netherland?"
+#query="Which cities are good to buy house in Netherlands in 2023 if I have a budget of 400,000 euros,have good facilities like schools, universities and low crime rate?"
+print(f"Query is {query}")
+agent.run(query)

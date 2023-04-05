@@ -11,7 +11,7 @@ from langchain.tools.python.tool import PythonAstREPLTool
 #from langchain.utilities import GoogleSearchAPIWrapper
 
 
-def create_pandas_dataframe_agent(
+def create_property_agent(
     llm: BaseLLM,
     df: Any,
     callback_manager: Optional[BaseCallbackManager] = None,

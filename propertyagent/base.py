@@ -56,11 +56,13 @@ def create_property_agent(
     search = GoogleSearchAPIWrapper()
 
     tools = [
+        
         Tool(
             name = "Search",
             func=search.run,
             description="useful for when you need to answer questions about current events"
         ),
+
         PythonAstREPLTool(locals={"df": df})
     ]
 

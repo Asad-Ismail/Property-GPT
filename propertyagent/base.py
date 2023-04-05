@@ -8,7 +8,8 @@ from langchain.callbacks.base import BaseCallbackManager
 from langchain.chains.llm import LLMChain
 from langchain.llms.base import BaseLLM
 from langchain.tools.python.tool import PythonAstREPLTool
-#from langchain.utilities import GoogleSearchAPIWrapper
+from langchain.utilities import GoogleSearchAPIWrapper
+from langchain.agents import  Tool
 
 
 def create_property_agent(
@@ -52,7 +53,18 @@ def create_property_agent(
 
     '''
 
-    tools = [PythonAstREPLTool(locals={"df": df})]
+    search = GoogleSearchAPIWrapper()
+
+    tools = [
+        Tool(
+            name = "Search",
+            func=search.run,
+            description="useful for when you need to answer questions about current events"
+        ),
+        PythonAstREPLTool(locals={"df": df})
+    ]
+
+    #tools = [PythonAstREPLTool(locals={"df": df})]
     prompt = ZeroShotAgent.create_prompt(
         tools, prefix=prefix, suffix=suffix, input_variables=input_variables
     )

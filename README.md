@@ -1,6 +1,6 @@
 # 🏡 Property/Real Estate-GPT 🌟
 
-A 🆓 open-source implementation of your personal property/real estate agent 🕴️‍♀️ powered by GPT-3/GPT-4 🚀
+A 🆓 open-source implementation of your personal property/real estate agent 🕴️ powered by GPT-3/GPT-4 🚀
 
 ## 🎉 Introduction
 Looking for a new property/real estate 🏠 to buy can be a daunting task, especially when there are so many options available. With the help of GPT-3/4, this project aims to simplify the process of finding the best property to buy.

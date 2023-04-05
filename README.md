@@ -1,4 +1,4 @@
-# 🏡 Property/Real Estate-GPT 🌟
+# 🏡 Real Estate/Property GPT 🌟
 
 A 🆓 open-source implementation of your personal property/real estate agent 🕴️ powered by GPT-3/GPT-4 🚀
 

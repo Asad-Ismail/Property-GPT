@@ -8,8 +8,8 @@ from config import *
 # Read data frame
 df = pd.read_csv(pd_path)
 
-#llm=OpenAI(temperature=0,max_tokens=1000,model_name="text-davinci-003")
-llm=OpenAI(temperature=0,max_tokens=1000,model_name="gpt-3.5-turbo-0301")
+llm=OpenAI(temperature=0,max_tokens=1000,model_name="text-davinci-003")
+#llm=OpenAI(temperature=0,max_tokens=1000,model_name="gpt-3.5-turbo-0301")
 
 
 from propertyagent.base import create_property_agent as create_property_agnet

@@ -10,6 +10,7 @@ Looking for a new property/real estate 🏠 to buy can be a daunting task, espec
 - Provides detailed information about each property, including location 📍, price 💰, and amenities 🛋️
 - Allows you to filter the list of properties based on various criteria, such as price, location, and size 🔍
 - It has access to internet (via google search) so it can know about current situation
+- If given the data frame of listing it will find the best house from the listing 
 
 ## Situations
 

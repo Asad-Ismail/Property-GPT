@@ -1,3 +1,4 @@
 funda-scraper
 langchain
  openai
+ google-api-python-client

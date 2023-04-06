@@ -29,3 +29,4 @@ Agent has access to internet so it can answer these questions
 
 2. Given listing of houses find me the best realstate given my prefreneces
 
+Listing of hoiusing is scraped from internet or some specific website like FUNDA for netherlands and compare house and their descriptions to find the best match

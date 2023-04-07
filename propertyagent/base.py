@@ -2,7 +2,7 @@
 from typing import Any, List, Optional
 
 from langchain.agents.agent import AgentExecutor
-from langchain.agents.agent_toolkits.pandas.prompt import PREFIX, SUFFIX
+from prompt import PREFIX, SUFFIX
 from langchain.agents.mrkl.base import ZeroShotAgent
 from langchain.callbacks.base import BaseCallbackManager
 from langchain.chains.llm import LLMChain

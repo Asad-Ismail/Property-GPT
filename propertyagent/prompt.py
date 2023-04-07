@@ -6,6 +6,8 @@ You are property agent. You are working with property listing in pandas datafram
 Try to avoid answers like it is unclear as you are the expert. You should use the tools below to give the advice:"""
 
 SUFFIX = """
+This is the result of `print(df.head())`:
+{df}
 Begin!
 Question: {input}
 {agent_scratchpad}"""

@@ -60,7 +60,8 @@ def create_property_agent(
         Tool(
             name = "Search",
             func=search.run,
-            description="useful for when you need to answer questions about current events"
+            description="useful for when you need to answer questions about current events",
+            **kwargs
         ),
 
         PythonAstREPLTool(locals={"df": df})

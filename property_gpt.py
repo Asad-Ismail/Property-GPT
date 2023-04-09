@@ -20,7 +20,7 @@ query="Can you find me the top 3 best deals properties from listing following ar
 \n 2. Should be less than 400000. \
 \n 3. Should have good energe rating A or better \
 \n 4. Should be built in last 10 years"
-query="Top cities to buy house in Netherlands in 2023 with afforadable prices in zud holland particulary rotterdam"
+query="Top cities/towns to buy house in Netherlands in 2023 with afforadable prices in the region close to Rotterdam and Dordecht"
 #query="Which cities are good to buy house in Netherlands in 2023 if I have a budget of 400,000 euros,have good facilities like schools, universities and low crime rate?"
 print(f"Query is {query}")
 agent.run(query)

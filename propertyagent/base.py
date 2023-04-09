@@ -52,7 +52,6 @@ def create_property_agent(
     agent_chain = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True, memory=memory)
 
     '''
-
     search = GoogleSearchAPIWrapper()
 
     tools = [
@@ -61,7 +60,6 @@ def create_property_agent(
             name = "Search",
             func=search.run,
             description="useful for when you need to answer questions about current events",
-            **kwargs
         ),
 
         PythonAstREPLTool(locals={"df": df})
